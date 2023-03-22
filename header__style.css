@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.header {
+}
+.background__image {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  left: 0px;
+  top: 0px;
+}
+.header__nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  font-family: "Ubuntu";
+}
+.header-body__nav {
+  margin: 0 auto;
+  padding: 10px 20px;
+  /* display: flex - робить об'єкти всередені цього блоку флексованими і ці об'єкти стають в один рядок */
+  display: flex;
+  /*  align-items: center - вирівнюю лінюю по центру */
+  align-items: center;
+  /* justify-content - обирає як будуть розташовані наші елементи */
+  justify-content: space-between;
+}
+
+.list {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  color: #ffff;
+}
+.item {
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+  position: relative;
+  display: inline-block;
+  left: 270px;
+  top: 50px;
+}
+.item:hover {
+  color: rgb(195, 112, 29);
+}
+.item::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  left: 0;
+  top: 45%;
+  transition: 0.4s;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+}
+.item:hover::after {
+  width: 100%;
+}
+.fa-cart-shopping {
+  font-size: 40px;
+  color: #ffff;
+  position: relative;
+  left: 220px;
+  top: 47px;
+}
+hr {
+  border: 1px solid rgb(255, 255, 255);
+  height: 60px;
+  position: relative;
+  left: 180px;
+  top: 45px;
+}
+.fa-phone-volume {
+  font-size: 18px;
+  color: #ffff;
+  position: relative;
+  top: 30px;
+  left: 150px;
+}
+.phone-number {
+  position: relative;
+  color: white;
+  right: -74px;
+  top: 30px;
+  font-size: 18px;
+}
+.more__info {
+  position: relative;
+  color: white;
+  right: 155px;
+  top: 55px;
+  font-size: 15px;
+}
+.bronuvannya {
+  position: relative;
+  color: #ff7400;
+  top: 20px;
+  left: -155px;
+}
+.button {
+  position: relative;
+  background-color: #ff7400;
+  width: 130px;
+  height: 45px;
+  top: 45px;
+  right: 290px;
+  cursor: pointer;
+}
+.button__info {
+  position: relative;
+  font-size: 14px;
+  color: #ffff;
+}
+.button:hover {
+  background-color: rgb(0, 0, 0);
+  transition: 0.9s;
+  content: "";
+  position: relative;
+}
+.button__info:hover {
+  color: #ff7400;
+  transition: 1s;
+  transform: scale(1.1);
+}
