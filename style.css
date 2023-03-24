@@ -132,3 +132,38 @@ hr {
   transition: 1s;
   transform: scale(1.1);
 }
+.headlines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Tinos";
+  position: relative;
+  top: 200px;
+  right: 300px;
+}
+
+.txt1 {
+  color: #ff7400;
+  position: relative;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 57px;
+}
+.txt2 {
+  color: #ff7400;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 92px;
+}
+.txt3 {
+  color: #ffff;
+  font-size: 15px;
+  position: relative;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 25px;
+}
